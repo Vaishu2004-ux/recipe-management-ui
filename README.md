@@ -28,3 +28,16 @@ A simple and interactive **Recipe Management UI** that lets users **store, categ
 1️⃣ **Clone the Repository**  
 ```sh
 git clone https://github.com/Vaishu2004-ux/recipe-management-ui.git
+
+
+📜 License
+
+This project is open-source and available under the MIT License.
+
+
+---
+
+💬 Contact
+
+📧 Email: morev3516@gmail.com
+🔗 GitHub: Vaishnavi Raju More 
