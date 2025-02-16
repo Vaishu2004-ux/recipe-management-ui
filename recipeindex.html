@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🍽️ Recipe Manager</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#add-recipe">Add Recipe</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content">
+            <h1>📖 Store & Share Your Favorite Recipes</h1>
+            <p>Organize, categorize, and showcase delicious recipes effortlessly!</p>
+            <button onclick="scrollToSection('add-recipe')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Add Recipe Section -->
+    <section id="add-recipe" class="section">
+        <h2>➕ Add a New Recipe</h2>
+        <div class="recipe-form">
+            <input type="text" id="recipeName" placeholder="Recipe Name" required>
+            <select id="recipeCategory">
+                <option value="Dessert">Dessert</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Salad">Salad</option>
+                <option value="Beverage">Beverage</option>
+            </select>
+            <input type="text" id="recipeTime" placeholder="Cooking Time (e.g., 30 mins)" required>
+            <textarea id="recipeDetails" placeholder="Enter recipe details..." required></textarea>
+            <button onclick="addRecipe()">Save Recipe</button>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="section">
+        <h2>📌 Your Saved Recipes</h2>
+        <div id="recipeList" class="recipe-grid"></div>
+    </section>
+
+</body>
+</html>
